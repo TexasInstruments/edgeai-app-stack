@@ -29,3 +29,14 @@ cross-compile Edge AI repos and installing them on target
     `make install`
 
 6. Run `make help` to know the differnet make targets available
+
+
+# Sync to latest updates
+
+1. Use below git command to sync to latest develop branch
+
+    `git submodule update --recursive --remote`
+
+2. Get the diff in all submodules
+
+    `git diff --submodule=diff`
