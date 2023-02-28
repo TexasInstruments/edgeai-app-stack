@@ -20,15 +20,19 @@ cross-compile Edge AI repos and installing them on target
 
     `./setup.sh`
 
-4. Modify Makefile to set TARGETFS, SOC, INSTALL_PATH etc..
+4. Connect the SD card that is flashed with EdgeAI WIC Image. By default
+   TargetFS and Install Path is set as default SD Card mount path
+   (/media/$USER/rootfs)
 
-5. Build and Install the components
+5. Modify Makefile to set TARGETFS, SOC, INSTALL_PATH etc..
+
+6. Build and Install the components
 
     `make`
 
     `make install`
 
-6. Run `make help` to know the differnet make targets available
+7. Run `make help` to know the differnet make targets available
 
 
 # Sync to latest updates
