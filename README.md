@@ -44,3 +44,13 @@ cross-compile Edge AI repos and installing them on target
 2. Get the diff in all submodules
 
     `git diff --submodule=diff`
+
+
+Edge AI app stack is validated on below devices, for more information please refer to the user guide links below
+
+Device | Release Version | Link
+--- | --- | ---
+AM62A | 08.06.00 | [Processor SDK Linux for AM62Ax](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM62AX/08_06_00/exports/docs/common/sdk_components.html#edge-ai-application-stack)
+AM68A | 08.06.00 | [Processor SDK Linux for AM68A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM68A/08_06_00/exports/docs/common/sdk_components.html#edge-ai-application-stack)
+AM69A | 08.06.00 | [Processor SDK Linux for AM69A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM69A/08_06_00/exports/docs/common/sdk_components.html#edge-ai-application-stack)
+TDA4VM-SK | 08.06.00 | [Processor SDK Linux for SK-TDA4VM](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/TDA4VM/08_06_00/exports/docs/common/sdk_components.html#edge-ai-application-stack)
