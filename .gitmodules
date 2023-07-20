@@ -18,3 +18,11 @@
 	path = edgeai-gst-apps
 	url = https://github.com/TexasInstruments/edgeai-gst-apps.git
 	branch = develop
+[submodule "edgeai-tiovx-apps"]
+	path = edgeai-tiovx-apps
+	url = https://github.com/TexasInstruments/edgeai-tiovx-apps.git
+	branch = develop
+[submodule "edgeai-apps-utils"]
+	path = edgeai-apps-utils
+	url = https://git.ti.com/git/edgeai/edgeai-apps-utils.git
+	branch = develop
