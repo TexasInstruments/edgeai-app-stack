@@ -26,3 +26,15 @@
 	path = edgeai-apps-utils
 	url = https://git.ti.com/git/edgeai/edgeai-apps-utils.git
 	branch = main
+[submodule "edgeai-studio-agent"]
+	path = edgeai-studio-agent
+	url = https://github.com/TexasInstruments/edgeai-studio-agent.git
+	branch = main
+[submodule "ti-gpio-py"]
+	path = ti-gpio-py
+	url = https://github.com/TexasInstruments/ti-gpio-py.git
+	branch = master
+[submodule "ti-gpio-cpp"]
+	path = ti-gpio-cpp
+	url = https://github.com/TexasInstruments/ti-gpio-cpp.git
+	branch = master
