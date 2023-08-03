@@ -79,7 +79,7 @@ apps_utils:
 apps_utils_install: apps_utils
 	@echo "Install Apps utils"
 	cd $(APPS_UTILS_PATH); \
-	sudo $(MAKE) install DESTDIR=$(INSTALL_PATH) -C build
+	$(MAKE) install DESTDIR=$(INSTALL_PATH) -C build
 
 apps_utils_clean:
 	@echo "Clean Apps utils"
@@ -99,7 +99,7 @@ dl_inferer: apps_utils_install
 dl_inferer_install: dl_inferer
 	@echo "Install DL Inferer"
 	cd $(DL_INFERER_PATH); \
-	sudo $(MAKE) install DESTDIR=$(INSTALL_PATH) -C build
+	$(MAKE) install DESTDIR=$(INSTALL_PATH) -C build
 
 dl_inferer_clean:
 	@echo "Clean DL Inferer"
@@ -119,7 +119,7 @@ tiovx_kernels: apps_utils_install
 tiovx_kernels_install: tiovx_kernels
 	@echo "Install TIOVX Kernels"
 	cd $(TIOVX_KERNELS_PATH); \
-	sudo $(MAKE) install DESTDIR=$(INSTALL_PATH) -C build
+	$(MAKE) install DESTDIR=$(INSTALL_PATH) -C build
 
 tiovx_kernels_clean:
 	@echo "Clean TIOVX Kernels"
@@ -139,7 +139,7 @@ tiovx_modules: tiovx_kernels_install
 tiovx_modules_install: tiovx_modules
 	@echo "Install TIOVX Modules"
 	cd $(TIOVX_MODULES_PATH); \
-	sudo $(MAKE) install DESTDIR=$(INSTALL_PATH) -C build
+	$(MAKE) install DESTDIR=$(INSTALL_PATH) -C build
 
 tiovx_modules_clean:
 	@echo "Clean TIOVX Modules"
@@ -169,7 +169,7 @@ gst_plugins: tiovx_modules_install dl_inferer_install apps_utils_install
 gst_plugins_install: gst_plugins
 	@echo "Install Gst Plugins"
 	cd $(GST_PLUGINS_PATH); \
-	sudo DESTDIR=$(INSTALL_PATH) ninja -C build install
+	DESTDIR=$(INSTALL_PATH) ninja -C build install
 
 gst_plugins_clean:
 	@echo "Clean Gst Plugins"
@@ -189,8 +189,8 @@ gst_apps: dl_inferer_install gst_plugins_install apps_utils_install
 gst_apps_install: gst_apps
 	@echo "Install Gst Apps"
 	cd $(GST_APPS_PATH); \
-	sudo mkdir -p $(INSTALL_PATH)/opt/edgeai-gst-apps-pc
-	sudo cp -r $(GST_APPS_PATH)/* $(INSTALL_PATH)/opt/edgeai-gst-apps-pc/
+	mkdir -p $(INSTALL_PATH)/opt/edgeai-gst-apps-pc
+	cp -r $(GST_APPS_PATH)/* $(INSTALL_PATH)/opt/edgeai-gst-apps-pc/
 
 gst_apps_clean:
 	@echo "Clean Gst Apps"
@@ -210,8 +210,8 @@ tiovx_apps: tiovx_modules_install apps_utils_install
 tiovx_apps_install: gst_apps
 	@echo "Install TIOVX Apps"; \
 	cd $(TIOVX_APPS_PATH); \
-	sudo mkdir -p $(INSTALL_PATH)/opt/edgeai-tiovx-apps-pc
-	sudo cp -r bin $(INSTALL_PATH)/opt/edgeai-tiovx-apps-pc/
+	mkdir -p $(INSTALL_PATH)/opt/edgeai-tiovx-apps-pc
+	cp -r bin $(INSTALL_PATH)/opt/edgeai-tiovx-apps-pc/
 
 tiovx_apps_clean:
 	@echo "Clean TIOVX Apps"
