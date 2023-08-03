@@ -11,8 +11,8 @@ GST_APPS_PATH          = edgeai-gst-apps/
 TIOVX_APPS_PATH        = edgeai-tiovx-apps/
 CROSS_COMPILER_PATH    = $(shell pwd)/arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu/
 CROSS_COMPILER_PREFIX  = aarch64-none-linux-gnu-
-TARGET_FS              = /media/$(USER)/rootfs/
-INSTALL_PATH           = /media/$(USER)/rootfs/
+TARGET_FS              = $(shell pwd)/targetfs
+INSTALL_PATH           = $(shell pwd)/targetfs
 SOC                   ?= none
 
 MAKE                   = make -j$(shell nproc)
@@ -88,7 +88,7 @@ apps_utils_clean:
 
 ########################### EDGEAI-DL-INFERER ##################################
 
-dl_inferer: apps_utils
+dl_inferer: apps_utils_install
 	@echo "Building DL Inferer"
 	cd $(DL_INFERER_PATH); \
 	mkdir build; \
@@ -108,7 +108,7 @@ dl_inferer_clean:
 
 ########################### EDGEAI-TIOVX-KERNELS ###############################
 
-tiovx_kernels: apps_utils
+tiovx_kernels: apps_utils_install
 	@echo "Building TIOVX Kernels"
 	cd $(TIOVX_KERNELS_PATH); \
 	mkdir build; \
@@ -128,7 +128,7 @@ tiovx_kernels_clean:
 
 ########################### EDGEAI-TIOVX-MODULES ###############################
 
-tiovx_modules: tiovx_kernels
+tiovx_modules: tiovx_kernels_install
 	@echo "Building TIOVX Modules"
 	cd $(TIOVX_MODULES_PATH); \
 	mkdir build; \
@@ -148,7 +148,7 @@ tiovx_modules_clean:
 
 ########################### EDGEAI-GST-PLUGINS #################################
 
-gst_plugins: tiovx_modules dl_inferer apps_utils
+gst_plugins: tiovx_modules_install dl_inferer_install apps_utils_install
 	@echo "Building GST Plugins"
 	cd $(GST_PLUGINS_PATH); \
 	cp pkgconfig/* $(TARGET_FS)/usr/lib/pkgconfig; \
@@ -178,7 +178,7 @@ gst_plugins_clean:
 
 ########################### EDGEAI-TIOVX-MODULES ###############################
 
-gst_apps: dl_inferer gst_plugins apps_utils
+gst_apps: dl_inferer_install gst_plugins_install apps_utils_install
 	@echo "Building Gst Apps"
 	cd $(GST_APPS_PATH)/apps_cpp; \
 	mkdir build; \
@@ -199,7 +199,7 @@ gst_apps_clean:
 
 ########################### EDGEAI-TIOVX-MODULES ###############################
 
-tiovx_apps: tiovx_modules apps_utils
+tiovx_apps: tiovx_modules_install apps_utils_install
 	@echo "Building TIOVX Apps"
 	cd $(TIOVX_APPS_PATH); \
 	mkdir build; \
