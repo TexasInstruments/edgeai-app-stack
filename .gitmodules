@@ -1,28 +1,28 @@
 [submodule "edgeai-dl-inferer"]
 	path = edgeai-dl-inferer
 	url = https://git.ti.com/git/edgeai/edgeai-dl-inferer.git
-	branch = develop
+	branch = main
 [submodule "edgeai-tiovx-kernels"]
 	path = edgeai-tiovx-kernels
 	url = https://git.ti.com/git/edgeai/edgeai-tiovx-kernels.git
-	branch = develop
+	branch = main
 [submodule "edgeai-tiovx-modules"]
 	path = edgeai-tiovx-modules
 	url = https://git.ti.com/git/edgeai/edgeai-tiovx-modules.git
-	branch = develop
+	branch = main
 [submodule "edgeai-gst-plugins"]
 	path = edgeai-gst-plugins
 	url = https://github.com/TexasInstruments/edgeai-gst-plugins.git
-	branch = develop
+	branch = main
 [submodule "edgeai-gst-apps"]
 	path = edgeai-gst-apps
 	url = https://github.com/TexasInstruments/edgeai-gst-apps.git
-	branch = develop
+	branch = main
 [submodule "edgeai-tiovx-apps"]
 	path = edgeai-tiovx-apps
 	url = https://github.com/TexasInstruments/edgeai-tiovx-apps.git
-	branch = develop
+	branch = main
 [submodule "edgeai-apps-utils"]
 	path = edgeai-apps-utils
 	url = https://git.ti.com/git/edgeai/edgeai-apps-utils.git
-	branch = develop
+	branch = main
