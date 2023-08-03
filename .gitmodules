@@ -38,3 +38,7 @@
 	path = ti-gpio-cpp
 	url = https://github.com/TexasInstruments/ti-gpio-cpp.git
 	branch = master
+[submodule "edgeai-gui-app"]
+	path = edgeai-gui-app
+	url = https://git.ti.com/git/apps/edgeai-gui-app.git
+	branch = master
