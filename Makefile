@@ -24,9 +24,9 @@ export SOC
 
 all: check_paths gst_apps
 
-install: dl_inferer_install tiovx_kernels_install tiovx_modules_install gst_plugins_install gst_apps_install
+install: apps_utils_install dl_inferer_install tiovx_kernels_install tiovx_modules_install gst_plugins_install gst_apps_install tiovx_apps_install
 
-clean: dl_inferer_clean tiovx_kernels_clean tiovx_modules_clean gst_plugins_clean gst_apps_clean
+clean: apps_utils_clean dl_inferer_clean tiovx_kernels_clean tiovx_modules_clean gst_plugins_clean gst_apps_clean tiovx_apps_clean
 
 check_paths:
 	@if [ ! -d $(APPS_UTILS_PATH)     ]; then echo 'ERROR: $(APPS_UTILS_PATH)     not found !!!'; exit 1; fi
