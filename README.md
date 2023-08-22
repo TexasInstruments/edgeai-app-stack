@@ -21,8 +21,7 @@ cross-compile Edge AI repos and installing them on target
     `./setup.sh`
 
 4. Connect the SD card that is flashed with EdgeAI WIC Image. By default
-   TargetFS and Install Path is set as default SD Card mount path
-   (/media/$USER/rootfs)
+   TargetFS and Install Path is set as $(PWD)/targetfs
 
 5. Modify Makefile to set TARGETFS, SOC, INSTALL_PATH etc..
 
@@ -50,7 +49,7 @@ Edge AI app stack is validated on below devices, for more information please ref
 
 Device | Release Version | Link
 --- | --- | ---
-AM62A | 08.06.00 | [Processor SDK Linux for AM62Ax](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM62AX/08_06_00/exports/docs/common/sdk_components.html#edge-ai-application-stack)
-AM68A | 08.06.01 | [Processor SDK Linux for AM68A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM68A/08_06_01/exports/docs/common/sdk_components.html#edge-ai-application-stack)
-AM69A | 08.06.01 | [Processor SDK Linux for AM69A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM69A/08_06_01/exports/docs/common/sdk_components.html#edge-ai-application-stack)
-TDA4VM-SK | 08.06.01 | [Processor SDK Linux for SK-TDA4VM](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/TDA4VM/08_06_01/exports/docs/common/sdk_components.html#edge-ai-application-stack)
+AM62A | 09.00.00 | [Processor SDK Linux for AM62Ax](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM62AX/09_00_00/exports/edgeai_docs/common/sdk_components.html#edge-ai-application-stack)
+AM68A | 09.00.00 | [Processor SDK Linux for AM68A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM68A/09_00_00/exports/edgeai_docs/common/sdk_components.html#edge-ai-application-stack)
+AM69A | 09.00.00 | [Processor SDK Linux for AM69A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM69A/09_00_00/exports/edgeai_docs/common/sdk_components.html#edge-ai-application-stack)
+TDA4VM-SK | 09.00.00 | [Processor SDK Linux for SK-TDA4VM](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/TDA4VM/09_00_00/exports/edgeai_docs/common/sdk_components.html#edge-ai-application-stack)
