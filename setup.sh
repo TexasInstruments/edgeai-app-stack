@@ -9,3 +9,12 @@ if [ ! -d arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu ]; then
     tar xf arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu.tar.xz > /dev/null
     rm arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu.tar.xz
 fi
+
+if [ ! -d targetfs ]; then
+    wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-O34VjGn5mM/09.00.00.08/tisdk-edgeai-image-j721s2-evm.tar.xz
+    mkdir targetfs
+    cd targetfs
+    tar xf ../tisdk-edgeai-image-j721s2-evm.tar.xz > /dev/null
+    cd -
+    rm tisdk-edgeai-image-j721s2-evm.tar.xz
+fi
