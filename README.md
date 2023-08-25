@@ -44,6 +44,7 @@ cross-compile Edge AI repos and installing them on target
 
     `git diff --submodule=diff`
 
+![Edge AI application stack](edgeai-app-stack.jpg)
 
 Edge AI app stack is validated on below devices, for more information please refer to the user guide links below
 
