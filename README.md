@@ -50,7 +50,7 @@ Edge AI app stack is validated on below devices, for more information please ref
 
 Device | Release Version | Link
 --- | --- | ---
-AM62A | 09.00.00 | [Processor SDK Linux for AM62Ax](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM62AX/09_00_00/exports/edgeai_docs/common/sdk_components.html#edge-ai-application-stack)
-AM68A | 09.00.00 | [Processor SDK Linux for AM68A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM68A/09_00_00/exports/edgeai_docs/common/sdk_components.html#edge-ai-application-stack)
-AM69A | 09.00.00 | [Processor SDK Linux for AM69A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/AM69A/09_00_00/exports/edgeai_docs/common/sdk_components.html#edge-ai-application-stack)
-TDA4VM-SK | 09.00.00 | [Processor SDK Linux for SK-TDA4VM](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-edgeai/TDA4VM/09_00_00/exports/edgeai_docs/common/sdk_components.html#edge-ai-application-stack)
+AM62A | 09.01.00 | [Processor SDK Linux for AM62Ax](https://software-dl.ti.com/processor-sdk-linux/esd/AM62AX/09_01_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
+AM68A | 09.01.00 | [Processor SDK Linux for AM68A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-am68a/09_01_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
+AM69A | 09.01.00 | [Processor SDK Linux for AM69A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-am69a/09_01_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
+TDA4VM-SK | 09.01.00 | [Processor SDK Linux for SK-TDA4VM](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-sk-tda4vm/09_01_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
