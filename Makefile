@@ -189,7 +189,7 @@ gst_apps: dl_inferer_install gst_plugins_install apps_utils_install
 gst_apps_install: gst_apps
 	@echo "Install Gst Apps"
 	cd $(GST_APPS_PATH); \
-	mkdir -p $(INSTALL_PATH)/opt/edgeai-gst-apps-pc
+	mkdir -p $(INSTALL_PATH)/opt/edgeai-gst-apps-pc; \
 	cp -r $(GST_APPS_PATH)/* $(INSTALL_PATH)/opt/edgeai-gst-apps-pc/
 
 gst_apps_clean:
@@ -207,10 +207,11 @@ tiovx_apps: tiovx_modules_install apps_utils_install
 	cmake -DCMAKE_TOOLCHAIN_FILE=../cmake/cross_compile_aarch64.cmake ..; \
 	$(MAKE)
 
-tiovx_apps_install: gst_apps
-	@echo "Install TIOVX Apps"; \
+tiovx_apps_install: tiovx_apps
+	@echo "Install TIOVX Apps"
 	cd $(TIOVX_APPS_PATH); \
-	mkdir -p $(INSTALL_PATH)/opt/edgeai-tiovx-apps-pc
+	$(MAKE) install DESTDIR=$(INSTALL_PATH) -C build; \
+	mkdir -p $(INSTALL_PATH)/opt/edgeai-tiovx-apps-pc; \
 	cp -r bin $(INSTALL_PATH)/opt/edgeai-tiovx-apps-pc/
 
 tiovx_apps_clean:
