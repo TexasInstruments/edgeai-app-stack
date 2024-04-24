@@ -39,7 +39,7 @@ check_paths:
 	@if [ ! -d $(TARGET_FS)           ]; then echo 'ERROR: $(TARGET_FS)           not found !!!'; exit 1; fi
 	@if [ ! -d $(INSTALL_PATH)        ]; then echo 'ERROR: $(INSTALL_PATH)        not found !!!'; exit 1; fi
 	@if [ ! -d $(CROSS_COMPILER_PATH) ]; then echo 'ERROR: $(CROSS_COMPILER_PATH) not found !!!'; exit 1; fi
-ifneq ("$(SOC)","$(filter $(SOC),j721e j721s2 j784s4 am62a)")
+ifneq ("$(SOC)","$(filter $(SOC),j721e j721s2 j784s4 j722s am62a)")
 	@echo 'ERROR: SOC: "$(SOC)" is not supported !!!';
 	@exit 1
 endif
