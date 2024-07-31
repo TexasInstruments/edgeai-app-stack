@@ -190,7 +190,7 @@ gst_apps_install: gst_apps
 	@echo "Install Gst Apps"
 	cd $(GST_APPS_PATH); \
 	mkdir -p $(INSTALL_PATH)/opt/edgeai-gst-apps-pc; \
-	cp -r $(GST_APPS_PATH)/* $(INSTALL_PATH)/opt/edgeai-gst-apps-pc/
+	cp -r * $(INSTALL_PATH)/opt/edgeai-gst-apps-pc/
 
 gst_apps_clean:
 	@echo "Clean Gst Apps"
