@@ -11,22 +11,22 @@ fi
 
 if [ ! -d targetfs ]; then
     if [ "$1" == "j721e" ]; then
-        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-U6uMjOroyO/09.02.00.05/tisdk-adas-image-j721e-evm.tar.xz
+        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-U6uMjOroyO/10.00.00.08/tisdk-adas-image-j721e-evm.tar.xz
         mv tisdk-adas-image-j721e-evm.tar.xz targetfs.tar.xz
     elif [ "$1" == "j721s2" ]; then
-        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-Snl3iJzGTW/09.02.00.05/tisdk-adas-image-j721s2-evm.tar.xz
+        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-Snl3iJzGTW/10.00.00.08/tisdk-adas-image-j721s2-evm.tar.xz
         mv tisdk-adas-image-j721s2-evm.tar.xz targetfs.tar.xz
     elif [ "$1" == "j784s4" ]; then
-        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-lOshtRwR8P/09.02.00.05/tisdk-adas-image-j784s4-evm.tar.xz
+        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-lOshtRwR8P/10.00.00.08/tisdk-adas-image-j784s4-evm.tar.xz
         mv tisdk-adas-image-j784s4-evm.tar.xz targetfs.tar.xz
     elif [ "$1" == "j722s" ]; then
-        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-R9W8pVWsOt/09.02.00.05/tisdk-adas-image-j722s-evm.tar.xz
+        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-R9W8pVWsOt/10.00.00.08/tisdk-adas-image-j722s-evm.tar.xz
         mv tisdk-adas-image-j722s-evm.tar.xz targetfs.tar.xz
     elif [ "$1" == "am62a" ]; then
-        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-D37Ls3JjkT/09.02.00.05/tisdk-edgeai-image-am62axx-evm.wic.xz
+        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-D37Ls3JjkT/10.00.00.08/tisdk-edgeai-image-am62axx-evm.wic.xz
         mv tisdk-edgeai-image-am62axx-evm.tar.xz targetfs.tar.xz
     else
-        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-Snl3iJzGTW/09.02.00.05/tisdk-adas-image-j721s2-evm.tar.xz
+        wget https://dr-download.ti.com/software-development/software-development-kit-sdk/MD-Snl3iJzGTW/10.00.00.08/tisdk-adas-image-j721s2-evm.tar.xz
         mv tisdk-adas-image-j721s2-evm.tar.xz targetfs.tar.xz
     fi
     mkdir targetfs
