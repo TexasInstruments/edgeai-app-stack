@@ -51,8 +51,8 @@ Edge AI app stack is validated on below devices, for more information please ref
 
 Device | Release Version | Link
 --- | --- | ---
-AM62A | 10.00.00 | [Processor SDK Linux for AM62Ax](https://software-dl.ti.com/processor-sdk-linux/esd/AM62AX/10_00_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
-AM67A | 10.00.00 | [Processor SDK Linux for AM67A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-am67a/10_00_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
-AM68A | 10.00.00 | [Processor SDK Linux for AM68A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-am68a/10_00_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
-AM69A | 10.00.00 | [Processor SDK Linux for AM69A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-am69a/10_00_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
-TDA4VM-SK | 10.00.00 | [Processor SDK Linux for SK-TDA4VM](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-sk-tda4vm/10_00_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
+AM62A | 10.01.00 | [Processor SDK Linux for AM62Ax](https://software-dl.ti.com/processor-sdk-linux/esd/AM62AX/10_01_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
+AM67A | 10.01.00 | [Processor SDK Linux for AM67A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-am67a/10_01_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
+AM68A | 10.01.00 | [Processor SDK Linux for AM68A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-am68a/10_01_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
+AM69A | 10.01.00 | [Processor SDK Linux for AM69A](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-am69a/10_01_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
+TDA4VM-SK | 10.01.00 | [Processor SDK Linux for SK-TDA4VM](https://software-dl.ti.com/jacinto7/esd/processor-sdk-linux-sk-tda4vm/10_01_00/exports/edgeai-docs/common/sdk_components.html#edge-ai-application-stack)
